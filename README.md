@@ -1,8 +1,9 @@
-# 🎈 Blank app template
+# Teacher Review Summarizer
 
-A simple Streamlit app template for you to modify!
+This project aims to summarize teacher reviews by identifying keywords in each review and identifying strengths/weaknesses of each teacher.
+It uses a sentiment analysis model (finetuned distilBERT) to identify the tone of each comment, and a keyword analysis model (finetuned Flan_T5_base) to identify the keywords in each review.
+Created for the AI Accelerator Program by AI Launch Lab, in the Fall 2024 cohort.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
 
 ### How to run it on your own machine
 
