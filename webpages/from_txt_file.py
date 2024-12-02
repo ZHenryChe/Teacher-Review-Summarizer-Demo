@@ -6,6 +6,10 @@ import os
 import nltk
 import pandas as pd
 
+####
+#The txt_file must contain the comments with \n\n (two backslashes) between each of them
+####
+
 nltk.download('punkt_tab')
 
 #Model for sentiment analysis
