@@ -19,3 +19,17 @@ Repository template: [https://github.com/streamlit/blank-app-template]
    ```
    $ streamlit run streamlit_app.py
    ```
+
+   or depending on your needs
+
+   ```
+   $ streamlit run webpages\demo.py
+   ```
+
+   ```
+   $ streamlit run webpages\from_txt_file.py
+   ```
+
+   ```
+   $ streamlit run webpages\from_url.py
+   ```
