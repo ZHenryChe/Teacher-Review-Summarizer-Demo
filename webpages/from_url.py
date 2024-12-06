@@ -16,10 +16,10 @@ keywordextract = pipeline("text2text-generation", model="ZephyrUtopia/keyword-su
 
 #text display
 st.write("""
-        # Please upload a file to summarize.
+        # RateMyProfessors Comment Summarizer.
          """)
 
-url = st.text_input("Please input a valid RateMyProfessor URL.", value=None)
+url = st.text_input("Please input a valid RateMyProfessors URL.", value=None)
 
 while url == None:
     time.sleep(1)
