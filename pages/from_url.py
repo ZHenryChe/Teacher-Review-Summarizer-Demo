@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 from transformers import pipeline
-from samples.txt_file_maker import scraping_baby_txt
+from modules.txt_file_maker import scraping_baby_txt
 import os
 import nltk
 import pandas as pd
