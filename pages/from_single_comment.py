@@ -23,7 +23,7 @@ if comment:
     sentiment = "positive" if label == "LABEL_1" else "negative"  # "LABEL_1" corresponds to 1 (positive)
     
     # Display the result
-    st.write(f"The comment is {sentiment} (certainty: {score:.2f})")
+    st.write(f"The comment is {sentiment} (certainty: {score:.2f}%)")
 
 
 
