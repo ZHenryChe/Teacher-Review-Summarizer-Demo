@@ -1,16 +1,18 @@
 import streamlit as st
 from transformers import pipeline
 from rake_nltk import Rake
-
+import time
 import nltk
 nltk.download('punkt_tab')
 
 sentiment_model = pipeline(model="ZephyrUtopia/ratemyprofessors-reviews-sentiment-analysis-10000-samples")
 
 # User input for the comment
-comment = st.text_input("Enter your comment:")
+comment = st.text_input("Enter your comment:", value = None)
 
-
+while comment == None:
+    time.sleep(1)
+    
 if comment:
     # Get the model prediction
     result = sentiment_model([comment])[0]  # Access the first result
