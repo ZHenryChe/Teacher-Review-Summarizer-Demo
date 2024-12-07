@@ -27,14 +27,20 @@ if comment:
 
 
 
-
-
 ## Now, process the keywords from the comment using the keyword extractor
 keywordextract = pipeline("text2text-generation", model="ZephyrUtopia/keyword-summarizer-10000-v1", max_new_tokens=512)
 
 with st.spinner('Extracting keywords...'):
-            # Keyword extraction for the entire comment (you can also split it into smaller chunks if needed)
-            keywords = keywordextract(f"Please find the keywords in this prompt: {comment}")
 
-            # Display keywords
-            st.write("Extracted Keywords:", keywords[0]['generated_text'])
+    keyword_compile = ''
+
+    comment_split = comment.split('.')
+    
+    for sentence in commment_split:
+        
+        # Keyword extraction for the entire comment (you can also split it into smaller chunks if needed)
+        keywords = keywordextract(f"Please find the keywords in this prompt: {comment}")
+        keyword_compile += keywords[0]['generated_text']
+    
+    # Display keywords
+    st.write("Extracted Keywords:", keyword_compile)
