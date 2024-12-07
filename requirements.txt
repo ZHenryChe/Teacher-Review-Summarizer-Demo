@@ -16,3 +16,4 @@ pandas
 pyarrow
 pylance
 rake-nltk
+lxml
