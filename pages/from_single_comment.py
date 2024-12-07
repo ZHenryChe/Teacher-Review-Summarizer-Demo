@@ -36,7 +36,7 @@ with st.spinner('Extracting keywords...'):
 
     comment_split = comment.split('.')
     
-    for sentence in commment_split:
+    for sentence in comment_split:
         
         # Keyword extraction for the entire comment (you can also split it into smaller chunks if needed)
         keywords = keywordextract(f"Please find the keywords in this prompt: {comment}")
